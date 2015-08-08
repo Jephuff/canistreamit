@@ -6,14 +6,14 @@ A simple js wrapper for the can I stream it api
 ## Install 
 
 ```
-npm i canIStreamIt
+npm i canistreamit
 ```
 
 ## Example
 
 ### Promise Chain
 ```js
-var canIStreamIt = require('canIStreamIt');
+var canistreamit = require('canistreamit');
 canIStreamIt.search('evil dead')
 	.then(function(results){
 		return canIStreamIt.streaming(results[0]);
@@ -25,7 +25,8 @@ canIStreamIt.search('evil dead')
 
 ### callbacks
 ```js
-canIStreamIt.search('evil dead', function(results) {
+var canistreamit = require('canistreamit');
+canistreamit.search('evil dead', function(results) {
 	canIStreamIt.streaming(results[0], function(result) {
 		console.log(result);
 	})
