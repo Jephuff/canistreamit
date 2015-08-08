@@ -1,0 +1,8 @@
+{
+  "name": "CanIStreamIt",
+  "version": "1.0.0",
+  "description": "javascript wrapper for Can I Stream it api",
+  "main": "index.js",
+  "author": "Jeffrey Burt",
+  "license": "ISC"
+}
